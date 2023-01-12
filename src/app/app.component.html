@@ -1,0 +1,9 @@
+<app-game-control (startGameRoot)="startGameRoot($event)" (stopGameRoot)="stopGameRoot()"></app-game-control>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            <app-odd *ngFor="let odditem of oddArray" [oddNumber]="odditem" [ngStyle]="{'color': 'blue'}"></app-odd>
+            <app-even *ngFor="let even of evenArray" [evenNumber]="even" [ngStyle]="{'color': 'green'}"></app-even>
+        </div>
+    </div>
+</div>
